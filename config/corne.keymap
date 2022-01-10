@@ -24,7 +24,7 @@
 &kp TAB   &kp Q &kp W &kp E    &kp R &kp T      &kp Y     &kp U &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &kp A &kp S &kp D    &kp F &kp G      &kp H     &kp J &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C    &kp V &kp B      &kp N     &kp M &kp COMMA &kp DOT &kp FSLH &kp ESC
-                         &kp LGUI &mo 1 &kp RET    &kp SPACE &mo 2 &kp RALT
+                        &kp LGUI &mo 1 &kp RET    &kp SPACE &mo 2 &kp RALT
                         >;
                 };
 
@@ -36,9 +36,9 @@
 //                       |     |     | RET | ADJ |     |
                         bindings = <
    &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp N8    &kp LPAR  &kp RPAR  &kp DEL
-   &trans &kp MINUS &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp GRAVE &kp TILDE
-   &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME  &kp END  &kp PG_UP &kp PG_DN &kp PSCRN &mt RSHFT RET
-                                 &trans      &trans     &trans    &kp RET        &mo 3       &trans
+   &trans &kp MINUS &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp END  &kp PG_UP &kp UP    &kp PG_DN &kp GRAVE &kp TILDE
+   &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME  &kp LEFT  &kp DOWN &kp RIGHT &kp PSCRN &mt RSHFT RET
+                            &trans      &trans     &trans          &kp RET        &mo 3       &trans
                         >;
                 };
 
