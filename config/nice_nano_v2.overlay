@@ -1,7 +1,7 @@
 &spi1 {
 	compatible = "nordic,nrf-spim";
 	status = "okay";
-	mosi-pin = <17>;
+	mosi-pin = <20>;
 	// Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
 	sck-pin = <5>;
 	miso-pin = <7>;
@@ -15,7 +15,7 @@
 		spi-max-frequency = <4000000>;
 
 		/* WS2812 */
-		chain-length = <11>; /* arbitrary; change at will */
+		chain-length = <6>; /* arbitrary; change at will */
 		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
 	};
