@@ -17,24 +17,24 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |   BKSP    |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |    '      |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT(RET) |
-//                         | ALT | LWR | SPC | RSE  | ALT |
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |       |  Y  |  U   |  I  |  O  |  P  |   BKSP    |
+// | SHFT |  A  |  S  |  D  |  F  |  G  |       |  H  |  J   |  K  |  L  |  ;  |    '      |
+// | CTRL |  Z  |  X  |  C  |  V  |  B  |       |  N  |  M   |  ,  |  .  |  /  | SHFT(RET) |
+//                    | ALT | LWR | RTN |       | RTN | RSE  | ALT |
                         bindings = <
 &kp TAB   &kp Q &kp W &kp E    &kp R &kp T      &kp Y     &kp U &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D    &kp F &kp G      &kp H     &kp J &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C    &kp V &kp B      &kp N     &kp M &kp COMMA &kp DOT &kp FSLH &kp ESC
+   &kp LSHFT &kp A &kp S &kp D    &kp F &kp G      &kp H     &kp J &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LCTRL &kp Z &kp X &kp C    &kp V &kp B      &kp N     &kp M &kp COMMA &kp DOT &kp FSLH &kp ESC
                         &kp LGUI &mo 1 &kp RET    &kp SPACE &mo 2 &kp RALT
                         >;
                 };
 
                 lower_layer {
 // ----------------------------------------------------------------------------------
-// |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |    DEL    |
-// |    |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN |  UP | RGT |  `  |     ~     |
-// |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(RET) |
-//                       |     |     | RET | ADJ |     |
+// |    |  !  |  @  |  #  |  $  |  %  |          |  ^  |  &  |  *  |  (  |  )  |    DEL   |
+// |    |  _  |  +  |  {  |  }  | "|" |          | LFT | PGUP|  UP |PGDN|  `  |     ~     |
+// |    | ESC | GUI | ALT | CAPS|  "  |          | HOME| LFT | DWN | RGT| PRSC| SHFT(RET) |
+//                        |     |     |           | RET | ADJ |     |
                         bindings = <
    &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp N8    &kp LPAR  &kp RPAR  &kp DEL
    &trans &kp MINUS &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp END  &kp PG_UP &kp UP    &kp PG_DN &kp GRAVE &kp TILDE
@@ -60,14 +60,14 @@
                 adjust_layer {
 // -----------------------------------------------------------------------------------------
 // | RGB BRI+ | RGB SAT+ | RGB HUE+ | RGB ANI+ |    | RGB TOG |   |  BT1  | BT2 | BT3 | BT4 | BT5 | BT CLR |
-// | RGB BRI- | RGB SAT- | RGB HUE- | RGB ANI- |    |         |   |       |     |     |     |     |        |
+// | RGB BRI- | RGB SAT- | RGB HUE- | RGB ANI- |    |         |   |  USB  | BLE |     |     |     |        |
 // |          |          |          |          |    | K_SLEEP |   | RESET |     |     |     |     |        |
 //                                              |     |     |     |     |     |
                         bindings = <
-   &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &none &rgb_ug RGB_TOG    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-   &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none &none              &none        &none        &none        &none        &none        &none
-   &none           &none           &none           &none           &none &kp K_SLEEP           &reset       &none        &none        &none        &none        &none
-                               &trans          &trans      &trans       &tog 3        &trans      &trans
+   &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &none        &rgb_ug RGB_TOG           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
+   &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none        &none                     &out OUT_USB &out OUT_BLE &none        &none        &none        &none
+   &none           &none           &none           &none           &none        &kp K_SLEEP               &reset       &none        &none        &none        &none        &none
+                                                   &trans          &trans       &trans                    &tog 3       &trans       &trans
                         >;
                 };
         };
