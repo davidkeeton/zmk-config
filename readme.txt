@@ -1,9 +1,9 @@
 Shield: Corne (aka crkbd aka heliodox) 
 Board: Nice!Nano V2
-Keymap: Qwerty
+Keymap: Qwerty - 4 layer: default, raise, lower, adjust
 OLED: Yes
-RGB: So far Underglow only -- per Key RGB not working -- could be soldering not sure. 
-KeyMap: Per Key RGB not working. All layers work well
+RGB:  So far Underglow only -- per Key RGB not working -- could be soldering not sure. 
+      Per Key RGB not working. All layers work well
 Bluetooth: Yes
 USB: Yes 
 
