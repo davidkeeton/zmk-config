@@ -2,7 +2,7 @@ Shield: Corne (aka crkbd aka heliodox)
 Board: Nice!Nano V2
 Keymap: Qwerty - 4 layer: default, raise, lower, adjust
 OLED: Yes
-RGB:  Yes, though settings dont propegate from left to right wirelessly
+RGB:  Yes
 Bluetooth: Yes
 USB: Yes 
 
