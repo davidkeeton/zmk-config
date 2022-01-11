@@ -32,6 +32,12 @@ corne.keymap - keylayout
 nice_nano_v2.overlay - define spi for rgb underglow
 oled.dtsi - define OLED display
 
+updated West.yaml to point to 
+petejohanson:core/peripheral-behavior-invocation
+
+-- this allows left and right to sync across bluetooth. 
+
+Note:
 
 I am not presently running this on battery as I am still waiting on LIPO Batteries to arrive via post. 
 
